@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-transform: capitalize;
+}
+#container {
+  background: rgb(209, 243, 213);
+  width: 50%;
+  margin: 20px auto 0px auto;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+#title {
+  padding: 5px;
+}
+#line {
+  width: 55%;
+  margin: -3px auto 12px auto;
+  border: 2px solid rgb(43, 128, 226);
+  border-radius: 2px;
+}
+#mxNum {
+  margin: 1em auto 5px auto;
+}
+#maxNum {
+  width: 40%;
+  margin-top: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 2px;
+  background-color: rgb(240, 230, 248);
+}
+#set {
+  width: 15%;
+  margin: 8px auto 10px auto;
+  background: rgb(50, 148, 205);
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+#choose,
+#reset {
+  width: 20%;
+  margin: 5px;
+  border-radius: 8px;
+  padding: 3px;
+}
+#choose {
+  background-color: rgb(3, 129, 13);
+  color: white;
+}
+#reset {
+  background-color: rgb(205, 50, 76);
+  color: white;
+}
+#choose:hover,
+#reset:hover,
+#set:hover {
+  transition: background 0.4s, color 0.4s;
+  background-color: rgb(224, 224, 224);
+  color: rgb(14, 14, 14);
+}
+#error {
+  font-family: "Lora", serif;
+  text-transform: none;
+  color: rgb(230, 34, 34);
+  font-weight: bold;
+}
+#resultH {
+  margin: 25px auto 0px auto;
+  font: 600 20px arial;
+  text-transform: none;
+}
+#randomNum {
+  width: 30%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px;
+  margin: 12px auto 15px auto;
+  font-size: 2em;
+  padding: 5px;
+  background: rgb(255, 231, 94);
+}
+
+@media only screen and (max-width: 550px) {
+  #container {
+    background: rgb(209, 243, 213);
+    width: 90%;
+    margin: 20px auto 0px auto;
+    padding: 0.5em;
+    border-radius: 10px;
+  }
+  #title {
+    font-size: 1.5rem;
+  }
+  #choose,
+  #set,
+  #reset {
+    width: 25%;
+  }
+  #maxNum {
+    width: 50%;
+  }
+  #resultH {
+    font: 600 16px arial;
+  }
+  #randomNum {
+    width: 25%;
+  }
+}
